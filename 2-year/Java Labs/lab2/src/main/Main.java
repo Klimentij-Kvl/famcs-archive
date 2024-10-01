@@ -27,5 +27,16 @@ public class Main {
             task2 Task = new task2();
             System.out.printf("Your answer is: %d", Task.Main(a,b,matrix));
         }
+        if(task == 3){
+            task3 Task = new task3();
+            int[][] ans = Task.main(a,b,matrix);
+            System.out.println("Your answer: ");
+            for(int i = 0; i < a; i++){
+                for(int j = 0; j < b; j++){
+                    System.out.printf("%d ", ans[i][j]);
+                }
+                System.out.println();
+            }
+        }
     }
 }
