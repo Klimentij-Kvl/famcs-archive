@@ -1,7 +1,7 @@
 package main;
 
 public class task3 {
-    int[][] main(int a, int b, int[][] m){
+    int[][] Main(int a, int b, int[][] m){
         int max = m[0][0];
         int maxI = 0;
         int maxJ = 0;
