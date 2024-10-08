@@ -17,12 +17,12 @@ public class task4 {
             }
         }
 
-        for(int i = 0; i < a; i++){
+        /*for(int i = 0; i < a; i++){
             for(int j = 0; j < a; j++){
                 System.out.printf("%d ", m[i][j]);
             }
             System.out.println();
-        }
+        }*/
 
         for(int i = 0; i < a; i++){
             ans *= m[i][i];
