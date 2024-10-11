@@ -1,25 +1,42 @@
 import java.io.File;
 import java.io.IOException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Stream;
 
 class gradeBook {
 
     class Session{
-        HashMap<String, Integer> subjectsAndMarks;
+        class Subject{
+            private String name;
+            private int mark;
 
-        Session(){
-            subjectsAndMarks= new HashMap<>();
+            Subject(String subjName, int subjMark){
+                name = subjName;
+                mark = subjMark;
+            }
+
+            int getMark(){
+                return mark;
+            }
+
+            void show(){
+                System.out.print(name + " " + mark + " ");
+            }
         }
 
-        Session(String subjName, int mark){
-            subjectsAndMarks= new HashMap<>();
-            subjectsAndMarks.put(subjName, mark);
+        Vector<Subject> subjects;
+
+        Session(){
+            subjects = new Vector<>();
         }
 
         void addSubject(String subjName, int mark){
-            subjectsAndMarks.put(subjName, mark);
+            subjects.add(new Subject(subjName, mark));
+        }
+
+        void show(){
+            for(Subject j : subjects)
+                j.show();
         }
     }
 
@@ -31,7 +48,7 @@ class gradeBook {
     private HashMap<Integer, Session> sessions;
 
 
-    gradeBook(String studentName, String studentSecondName, String studentSurname, int studentYear, int studentGroup){
+    gradeBook(String studentSecondName, String studentName, String studentSurname, int studentYear, int studentGroup){
         name = studentName;
         secondName = studentSecondName;
         surname = studentSurname;
@@ -58,10 +75,14 @@ class gradeBook {
         if(sessions.containsKey(sessionNum)){
             sessions.get(sessionNum).addSubject(subjectName, mark);
         }else{
-            sessions.put(sessionNum, new Session(subjectName, mark));
+            sessions.put(sessionNum, new Session());
         }
     }
-}
+
+    void show(){
+        System.out.println(secondName +" " + name + " " + surname + " "
+                + year + " " + group);
+    }}
 
 public class Main {
     public static void main(String[] args) {
@@ -69,11 +90,34 @@ public class Main {
         File studFile = new File("students.txt");
         try {
             Scanner in = new Scanner(studFile);
-            int i = 0;
+            int i = 1;
             Date current = new Date();
             while(in.hasNext()){
                 students.put(current.getYear() * 1000 + i, new gradeBook(in.next(), in.next(),
                         in.next(), in.nextInt(), in.nextInt()));
+                i++;
+            }
+            for(Integer j : new TreeSet<>(students.keySet())){
+                System.out.print(j + " ");
+                students.get(j).show();
+            }
+
+            Scanner cin = new Scanner(System.in);
+            String s, subject;
+            int session, course, group, stud;
+            File subj;
+            while(true){
+                s = cin.next();
+                if(s.equals("0")){
+                    break;
+                }
+                subj = new File(s);
+                in = new Scanner(subj);
+                subject = in.next();
+                session = in.nextInt(); course = in.nextInt(); group = in.nextInt();
+                while(in.hasNext()){
+                    students.get(in.nextInt()) = 
+                }
             }
         }catch(IOException e){
             System.out.println(e.getMessage());
