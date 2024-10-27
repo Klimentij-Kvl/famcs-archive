@@ -1,8 +1,16 @@
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonValue;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
-import java.util.stream.Stream;
 
+
+
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 class gradeBook {
 
     class Session{
@@ -15,12 +23,10 @@ class gradeBook {
                 mark = subjMark;
             }
 
-            int getMark(){
-                return mark;
-            }
-
-            void show(){
-                System.out.print(name + " " + mark + " ");
+            @Override
+            @JsonValue
+            public String toString(){
+                return name + ": " + mark;
             }
         }
 
@@ -30,25 +36,34 @@ class gradeBook {
             subjects = new Vector<>();
         }
 
-        void addSubject(String subjName, int mark){
-            subjects.add(new Subject(subjName, mark));
+        Session(String subj, int mark){
+            subjects = new Vector<>();
+            addSubj(subj, mark);
         }
 
-        void show(){
-            for(Subject j : subjects)
-                j.show();
+        void addSubj(String subj, int mark){
+            subjects.add(new Subject(subj, mark));
+        }
+
+        @Override
+        @JsonValue
+        public String toString(){
+            return subjects.toString();
         }
     }
 
+    public int num;
     private String name;
     private String secondName;
     private String surname;
     private int year;
     private int group;
+    //@JsonIgnore
     private HashMap<Integer, Session> sessions;
 
 
-    gradeBook(String studentSecondName, String studentName, String studentSurname, int studentYear, int studentGroup){
+    gradeBook(int Num, String studentSecondName, String studentName, String studentSurname, int studentYear, int studentGroup){
+        num = Num;
         name = studentName;
         secondName = studentSecondName;
         surname = studentSurname;
@@ -57,70 +72,76 @@ class gradeBook {
         sessions = new HashMap<>();
     }
 
-    void setPassportData(String studentName, String studentSecondName, String studentSurname) {
-        name = studentName;
-        secondName = studentSecondName;
-        surname = studentSurname;
+    int getNum(){
+        return num;
     }
 
-    void setYear(int studentYear) {
-        year = studentYear;
-    }
-
-    void setGroup(int studentGroup) {
-        group = studentGroup;
-    }
-
-    void addSubjectMark(int sessionNum, String subjectName, int mark){
-        if(sessions.containsKey(sessionNum)){
-            sessions.get(sessionNum).addSubject(subjectName, mark);
-        }else{
-            sessions.put(sessionNum, new Session());
+    void addSubj(int session, String subject, int mark){
+        if(sessions.containsKey(session)){
+            sessions.get(session).addSubj(subject, mark);
+        }
+        else{
+            sessions.put(session, new Session(subject, mark));
         }
     }
 
-    void show(){
-        System.out.println(secondName +" " + name + " " + surname + " "
-                + year + " " + group);
-    }}
+    @Override
+    public String toString(){
+        return num + " " + secondName + " " + name + " " + surname + " "
+                + year + " " + group + " " + sessions;
+    }
+}
 
 public class Main {
-    public static void main(String[] args) {
-        HashMap<Integer, gradeBook> students = new HashMap<>();
+    public static void main(String[] args) throws IOException {
+        ArrayList<gradeBook> students = new ArrayList<>();
         File studFile = new File("students.txt");
-        try {
-            Scanner in = new Scanner(studFile);
-            int i = 1;
-            Date current = new Date();
-            while(in.hasNext()){
-                students.put(current.getYear() * 1000 + i, new gradeBook(in.next(), in.next(),
-                        in.next(), in.nextInt(), in.nextInt()));
-                i++;
-            }
-            for(Integer j : new TreeSet<>(students.keySet())){
-                System.out.print(j + " ");
-                students.get(j).show();
-            }
 
-            Scanner cin = new Scanner(System.in);
-            String s, subject;
-            int session, course, group, stud;
-            File subj;
-            while(true){
-                s = cin.next();
-                if(s.equals("0")){
-                    break;
-                }
-                subj = new File(s);
-                in = new Scanner(subj);
-                subject = in.next();
-                session = in.nextInt(); course = in.nextInt(); group = in.nextInt();
-                while(in.hasNext()){
-                    students.get(in.nextInt()) = 
+        Scanner in = new Scanner(studFile);
+        while(in.hasNext()){
+            students.add(new gradeBook(in.nextInt(), in.next(), in.next(), in.next(),
+                    in.nextInt(), in.nextInt()));
+        }
+        for(gradeBook gb: students){
+            System.out.println(gb);
+        }
+
+        Scanner cin = new Scanner(System.in);
+        String file, subj;
+        Scanner examIn;
+        int N, session;
+        while(true) {
+            System.out.print("Type a name of exam file (or N if you wanna leave program): ");
+            file = cin.nextLine();
+            if(file.equals("N")) break;
+            File examFile = new File(file);
+            examIn = new Scanner(examFile);
+
+            subj = examIn.nextLine();
+            session = examIn.nextInt();
+            while(examIn.hasNext()){
+                N = examIn.nextInt();
+                for(gradeBook gb: students){
+                    if(gb.getNum() == N){
+                        gb.addSubj(session, subj, examIn.nextInt());
+                        break;
+                    }
                 }
             }
-        }catch(IOException e){
-            System.out.println(e.getMessage());
         }
+
+        for(gradeBook gb: students){
+            System.out.println(gb);
+        }
+
+        File jsonFile = new File("students.json");
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.enable(SerializationFeature.INDENT_OUTPUT)
+                .writeValue(jsonFile, students);
+
+        File xmlFile = new File("students.xml");
+        ObjectMapper xmlMapper = new XmlMapper();
+        xmlMapper.enable(SerializationFeature.INDENT_OUTPUT)
+                .writeValue(xmlFile, students);
     }
 }

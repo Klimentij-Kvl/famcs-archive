@@ -7,5 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jackson-annotations-2.18.0" level="project" />
+    <orderEntry type="library" name="jackson-dataformat-xml-2.18.0" level="project" />
+    <orderEntry type="library" name="stax2-api-4.2.1" level="project" />
+    <orderEntry type="library" name="woodstox-core-6.2.8" level="project" />
   </component>
 </module>
