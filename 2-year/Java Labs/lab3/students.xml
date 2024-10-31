@@ -6,10 +6,6 @@
     <surname>Евгеньевич</surname>
     <year>2</year>
     <group>6</group>
-    <sessions>
-      <1>[История: 3]</1>
-      <2>[Математический анализ: 3, Программирование: 2]</2>
-    </sessions>
   </item>
   <item>
     <num>2</num>
@@ -18,10 +14,6 @@
     <surname>Федорович</surname>
     <year>1</year>
     <group>6</group>
-    <sessions>
-      <1>[История: 7]</1>
-      <2>[Математический анализ: 7, Программирование: 10]</2>
-    </sessions>
   </item>
   <item>
     <num>3</num>
@@ -30,10 +22,6 @@
     <surname>Андрееевич</surname>
     <year>3</year>
     <group>4</group>
-    <sessions>
-      <1>[История: 10]</1>
-      <2>[Математический анализ: 10, Программирование: 7]</2>
-    </sessions>
   </item>
   <item>
     <num>4</num>
@@ -42,10 +30,6 @@
     <surname>Квадратович</surname>
     <year>2</year>
     <group>7</group>
-    <sessions>
-      <1>[История: 6]</1>
-      <2>[Математический анализ: 6, Программирование: 6]</2>
-    </sessions>
   </item>
   <item>
     <num>5</num>
@@ -54,9 +38,5 @@
     <surname>Витальевна</surname>
     <year>2</year>
     <group>6</group>
-    <sessions>
-      <1>[История: 4]</1>
-      <2>[Математический анализ: 4, Программирование: 5]</2>
-    </sessions>
   </item>
 </ArrayList>

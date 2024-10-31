@@ -1,5 +1,7 @@
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonValue;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
@@ -12,7 +14,6 @@ import java.util.*;
 
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 class gradeBook {
-
     class Session{
         class Subject{
             private String name;
@@ -24,7 +25,6 @@ class gradeBook {
             }
 
             @Override
-            @JsonValue
             public String toString(){
                 return name + ": " + mark;
             }
@@ -58,9 +58,12 @@ class gradeBook {
     private String surname;
     private int year;
     private int group;
-    //@JsonIgnore
+    @JsonIgnore
     private HashMap<Integer, Session> sessions;
 
+    gradeBook(){
+        sessions = new HashMap<>();
+    }
 
     gradeBook(int Num, String studentSecondName, String studentName, String studentSurname, int studentYear, int studentGroup){
         num = Num;
@@ -95,18 +98,31 @@ class gradeBook {
 public class Main {
     public static void main(String[] args) throws IOException {
         ArrayList<gradeBook> students = new ArrayList<>();
-        File studFile = new File("students.txt");
-
-        Scanner in = new Scanner(studFile);
-        while(in.hasNext()){
-            students.add(new gradeBook(in.nextInt(), in.next(), in.next(), in.next(),
-                    in.nextInt(), in.nextInt()));
+        Scanner cin = new Scanner(System.in);
+        System.out.print("Write type of students file: ");
+        String format = cin.nextLine();
+        if(format.equals("txt")){
+            File studFile = new File("students.txt");
+            Scanner in = new Scanner(studFile);
+            while(in.hasNext()){
+                students.add(new gradeBook(in.nextInt(), in.next(), in.next(), in.next(),
+                        in.nextInt(), in.nextInt()));
+            }
         }
+        else if(format.equals("json")){
+            File studFile = new File("students.json");
+            students = new ObjectMapper().readValue(studFile, new TypeReference<ArrayList<gradeBook>>(){});
+        }
+        else if(format.equals("xml")){
+            File studFile = new File("students.xml");
+            students = new XmlMapper().readValue(studFile, new TypeReference<ArrayList<gradeBook>>(){});
+        }
+
         for(gradeBook gb: students){
             System.out.println(gb);
         }
 
-        Scanner cin = new Scanner(System.in);
+
         String file, subj;
         Scanner examIn;
         int N, session;
