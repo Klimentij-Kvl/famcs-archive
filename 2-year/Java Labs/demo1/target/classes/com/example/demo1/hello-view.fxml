@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="36.0" layoutY="42.0" prefHeight="75.0" prefWidth="137.0">
+         <children>
+            <Label text="Поздравитель" />
+            <CheckBox fx:id="org1" mnemonicParsing="false" text="ООО Феникс 1000$" />
+            <CheckBox fx:id="org2" mnemonicParsing="false" text="ИП Хасбик 200$" />
+            <CheckBox fx:id="org3" mnemonicParsing="false" text="ОАО Рофлокек 400$" />
+         </children>
+      </VBox>
+      <VBox layoutX="206.0" layoutY="42.0" prefHeight="92.0" prefWidth="117.0">
+         <children>
+            <Label text="Подарок" />
+            <CheckBox fx:id="prize1" mnemonicParsing="false" text="Ноутбук 1500$" />
+            <CheckBox fx:id="prize2" mnemonicParsing="false" text="Тетрадка 2$" />
+            <CheckBox fx:id="prize3" mnemonicParsing="false" text="Байка 50$" />
+            <CheckBox fx:id="prize4" mnemonicParsing="false" text="Павербанк 100$" />
+         </children>
+      </VBox>
+      <VBox layoutX="338.0" layoutY="42.0" prefHeight="140.0" prefWidth="154.0">
+         <children>
+            <Label text="Нужен ли концерт" />
+            <CheckBox fx:id="concYes" mnemonicParsing="false" text="Да" />
+            <CheckBox fx:id="concNo" mnemonicParsing="false" text="Нет" />
+            <Pane prefHeight="34.0" prefWidth="154.0" />
+            <Label text="Постоянный ли Вы клиент" />
+            <CheckBox fx:id="clientYes" mnemonicParsing="false" text="Да" />
+            <CheckBox fx:id="clientNo" mnemonicParsing="false" text="Нет" />
+         </children>
+      </VBox>
+      <Label layoutX="214.0" layoutY="239.0">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
