@@ -24,5 +24,6 @@ class FibonachiTest {
         assertEquals(mockList, Fibonachi.makeFibonachiList(93));
 
         assertNull(Fibonachi.makeFibonachiList(100));
+        assertNull(Fibonachi.makeFibonachiList(-1));
     }
 }

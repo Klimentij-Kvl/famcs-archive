@@ -10,6 +10,10 @@ public class Fibonachi{
             System.out.println("Too big number for function");
             return null;
         }
+        if(n < 1){
+            System.out.println("Too little number for function");
+            return null;
+        }
         List<Long> arr = new ArrayList<>();
         long a = 0, b = 1, c;
         for(int i = 0; i < n; i++){
