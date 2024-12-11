@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab5.HelloController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab5.HelloController">
    <children>
       <HBox prefHeight="316.0" prefWidth="600.0">
          <children>
-            <VBox prefHeight="316.0" prefWidth="186.0">
+            <VBox prefHeight="316.0" prefWidth="232.0">
                <children>
                   <Label text="Поздравитель" />
-                  <RadioButton fx:id="pozd1" mnemonicParsing="false" text="ООО Феникс" />
-                  <RadioButton fx:id="pozd2" mnemonicParsing="false" text="ОАО Рофлан" />
-                  <RadioButton fx:id="pozd3" mnemonicParsing="false" text="ООО ПодравляемВас.ру" />
+                  <RadioButton fx:id="pozd1" mnemonicParsing="false" selected="true" text="ООО Феникс (1000)" />
+                  <RadioButton fx:id="pozd2" mnemonicParsing="false" text="ОАО Рофлан (1500)" />
+                  <RadioButton fx:id="pozd3" mnemonicParsing="false" text="ООО ПодравляемВас.ру (3000)" />
                </children>
             </VBox>
-            <VBox prefHeight="316.0" prefWidth="157.0">
+            <VBox prefHeight="316.0" prefWidth="241.0">
                <children>
                   <Label text="Подарок" />
-                  <RadioButton fx:id="gift1" mnemonicParsing="false" text="Телефон" />
-                  <RadioButton fx:id="gift2" mnemonicParsing="false" text="Планшет" />
-                  <RadioButton fx:id="gift3" mnemonicParsing="false" text="Шоколадка" />
-                  <RadioButton fx:id="gift4" mnemonicParsing="false" text="Книга" />
+                  <RadioButton fx:id="gift1" mnemonicParsing="false" selected="true" text="Телефон (500)" />
+                  <RadioButton fx:id="gift2" mnemonicParsing="false" text="Планшет (800)" />
+                  <RadioButton fx:id="gift3" mnemonicParsing="false" text="Шоколадка (50)" />
+                  <RadioButton fx:id="gift4" mnemonicParsing="false" text="Книга (70)" />
                </children>
             </VBox>
-            <VBox prefHeight="316.0" prefWidth="186.0">
+            <VBox prefHeight="316.0" prefWidth="261.0">
                <children>
                   <Label text="Нужен ли концерт?" />
-                  <RadioButton fx:id="yes" mnemonicParsing="false" text="Нет" />
-                  <RadioButton fx:id="no" mnemonicParsing="false" text="Да" />
+                  <RadioButton fx:id="no" mnemonicParsing="false" selected="true" text="Нет" />
+                  <RadioButton fx:id="yes" mnemonicParsing="false" text="Да (+15000)" />
                </children>
             </VBox>
          </children>
       </HBox>
-      <Button fx:id="button" mnemonicParsing="false" prefHeight="26.0" prefWidth="124.0" text="Подсчитать" />
+      <Button fx:id="button" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="26.0" prefWidth="124.0" text="Подсчитать" />
       <Label fx:id="label" prefHeight="18.0" prefWidth="133.0" text="Label" />
    </children>
 </VBox>
