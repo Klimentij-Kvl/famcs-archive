@@ -1,37 +1,6 @@
 package org.example;
 
 import java.util.*;
-import java.util.stream.Collectors;
-
-class upIntComp implements Comparator<Integer>{
-    public int compare(Integer a, Integer b){
-        return a.compareTo(b);
-    }
-}
-
-class downIntComp implements Comparator<Integer>{
-    public int compare(Integer a, Integer b){
-        return b.compareTo(a);
-    }
-}
-
-class Arr extends Thread{
-    public List<Integer> arr;
-    public String sortType;
-
-    public void run(){
-        Comparator<Integer> comp;
-        if(sortType.equals("up"))
-            comp = Comparator.naturalOrder();
-        else
-            comp = Comparator.reverseOrder();
-
-        arr.sort(comp);
-        //for(int i : arr){
-        //    System.out.print(i + " ");
-        //}
-    }
-}
 
 public class Main {
     public static void main(String[] args) throws InterruptedException{
