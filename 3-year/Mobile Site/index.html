@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор корней</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app">
+        <!-- Главный экран -->
+        <div id="mainScreen" class="screen active">
+            <header class="header">
+                <h1>Калькулятор корней</h1>
+            </header>
+
+            <main class="main-content">
+                <!-- Поле ввода -->
+                <div class="input-group">
+                    <label for="numberInput">Введите число:</label>
+                    <input 
+                        type="number" 
+                        id="numberInput" 
+                        placeholder="Введите число"
+                        step="any"
+                    >
+                </div>
+
+                <!-- Выбор типа корня -->
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="squareRoot" name="rootType" value="square" checked>
+                        <label for="squareRoot">Квадратный корень (√)</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="cubeRoot" name="rootType" value="cube">
+                        <label for="cubeRoot">Кубический корень (∛)</label>
+                    </div>
+                </div>
+
+                <!-- Кнопки действий -->
+                <div class="button-group">
+                    <button id="calculateBtn" class="btn btn-primary">Вычислить</button>
+                    <button id="clearBtn" class="btn btn-secondary">Очистить</button>
+                </div>
+
+                <!-- Результат -->
+                <div id="result" class="result"></div>
+
+                <!-- Навигация -->
+                <div class="nav-buttons">
+                    <button id="historyBtn" class="btn btn-nav">История</button>
+                    <button id="settingsBtn" class="btn btn-nav">Настройки</button>
+                </div>
+            </main>
+        </div>
+
+        <!-- Экран истории -->
+        <div id="historyScreen" class="screen">
+            <header class="header">
+                <button id="backFromHistory" class="back-btn">← Назад</button>
+                <h1>История вычислений</h1>
+            </header>
+
+            <main class="main-content">
+                <div id="historyList" class="history-list">
+                    <!-- История будет добавляться сюда -->
+                </div>
+                <button id="clearHistory" class="btn btn-secondary">Очистить историю</button>
+            </main>
+        </div>
+
+        <!-- Экран настроек -->
+        <div id="settingsScreen" class="screen">
+            <header class="header">
+                <button id="backFromSettings" class="back-btn">← Назад</button>
+                <h1>Настройки</h1>
+            </header>
+
+            <main class="main-content">
+                <div class="setting-group">
+                    <label for="decimalPlaces">Количество знаков после запятой:</label>
+                    <select id="decimalPlaces">
+                        <option value="2">2</option>
+                        <option value="4" selected>4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                
+                <div class="setting-group">
+                    <label>
+                        <input type="checkbox" id="saveHistory"> Сохранять историю вычислений
+                    </label>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
