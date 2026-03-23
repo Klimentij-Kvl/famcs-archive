@@ -6,6 +6,7 @@ Professor: Troush Nikolai Nikolaevich
 
 1. Researching and modeling Lognormal distribution.
 2. Researching and modeling Variance Gamma distribution.
-3. Researching and modeling Stable distribution
+3. Researching and modeling Stable distribution.
 
-3. Modeling Wiener stochastic process
+4. Modeling Wiener stochastic process.
+5. Modeling alpha-stable Levi stochastic process and researching it`s parametrs.
