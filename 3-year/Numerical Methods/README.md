@@ -26,6 +26,7 @@ File: lab1nm.ipynb
 ### Module 4: approximation of functions
 File: lab2nm.ipynb
 1. Least squares method
-2. Lagrange method
+2. interpolation polynomial of the Lagrange method
 3. Interpolation remainder in Newton forme
 4. Interpolation remainder minimization with Chebyshev polynomial points.
+5. Newton's interpolation polynomial at the end of the table.
