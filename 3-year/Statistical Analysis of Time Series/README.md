@@ -11,3 +11,5 @@ Professor: Troush Nikolai Nikolaevich
 4. Modeling Wiener stochastic process.
 5. Modeling alpha-stable Levi stochastic process and researching it`s parameters.
 6. Modeling Variance Gamma stochastic process.
+
+7. Researching and modeling GARCH(1,1) on real data (stocks)
