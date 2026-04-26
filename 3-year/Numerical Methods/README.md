@@ -22,11 +22,18 @@ File: lab1nm.ipynb
 2. Newton method
 3. Chord method
 
-
 ### Module 4: approximation of functions
+
 File: lab2nm.ipynb
 1. Least squares method
 2. interpolation polynomial of the Lagrange method
 3. Interpolation remainder in Newton forme
 4. Interpolation remainder minimization with Chebyshev polynomial points.
 5. Newton's interpolation polynomial at the end of the table.
+
+### Module 5: approximate calculation of integrals
+
+File: lab3nm.ipynb
+1. Simpson`s formula
+2. Runge rule
+3. Gauss`s quadrature formula of best accuracy
