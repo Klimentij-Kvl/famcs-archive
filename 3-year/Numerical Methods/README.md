@@ -1,6 +1,8 @@
 # Numerical methods
 Repository of laboratory work on the subject "Numerical methods"
 
+Docent: Boudnik Anatolii Mikhailovich
+
 ### Module 1: solution of a system  of linear algebraic equations
 
 1. Gaussian method - lab1vma.py
@@ -37,3 +39,10 @@ File: lab3nm.ipynb
 1. Simpson`s formula
 2. Runge rule
 3. Gauss`s quadrature formula of best accuracy
+
+### Module 6: numerical methods for ordinary differential equations
+
+File: lab4nm.ipynb
+1. Implicit Euler method
+2. Explicit Runge–Kutta method of order 2 (Heun’s method)
+3. Implicit Adams method of order 2
