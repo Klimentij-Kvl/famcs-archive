@@ -46,3 +46,4 @@ File: lab4nm.ipynb
 1. Implicit Euler method
 2. Explicit Runge–Kutta method of order 2 (Heun’s method)
 3. Implicit Adams method of order 2
+4. Explicit Runge-Kutta method of order 4
