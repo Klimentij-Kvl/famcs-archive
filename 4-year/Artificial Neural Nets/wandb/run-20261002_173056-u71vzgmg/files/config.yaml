@@ -1,0 +1,54 @@
+_wandb:
+    value:
+        cli_version: 0.28.2
+        e:
+            8bnei5bfwojgaz9t0bn45shjoqx3etcp:
+                codePath: /Users/nagiev/university/artifical neuron nets/Klimentij-classification_methods_completed.ipynb
+                codePathLocal: Klimentij-classification_methods_completed.ipynb
+                cpu_count: 2
+                cpu_count_logical: 4
+                disk:
+                    /:
+                        total: "121123069952"
+                        used: "65825447936"
+                email: korovatomilk@gmail.com
+                executable: /Users/nagiev/university/artifical neuron nets/.venv/bin/python
+                host: MacBook-Air-3.local
+                memory:
+                    total: "8589934592"
+                os: macOS-12.7.6-x86_64-i386-64bit
+                program: /Users/nagiev/university/artifical neuron nets/Klimentij-classification_methods_completed.ipynb
+                python: CPython 3.11.0
+                root: /Users/nagiev/university/artifical neuron nets
+                startedAt: "2026-10-02T14:30:56.816012Z"
+                writerId: 8bnei5bfwojgaz9t0bn45shjoqx3etcp
+        m: []
+        python_version: 3.11.0
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.11.0
+            "5": 0.28.2
+            "8":
+                - 1
+            "12": 0.28.2
+            "13": darwin-x86_64
+best_by:
+    value: val_AP
+models:
+    value:
+        - LogReg (занятие 3)
+        - kNN (k=50)
+        - GaussianNB
+        - BernoulliNB
+        - Tree depth=3
+        - RandomForest
+        - HistGradientBoosting

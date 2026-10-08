@@ -1,0 +1,8 @@
+item,value
+data_source,online_shoppers_intention.csv
+random_state,42
+python,3.11.0
+pandas,3.0.6
+scikit-learn,1.9.1
+split,60/20/20
+classification_pagevalues,excluded from early baseline

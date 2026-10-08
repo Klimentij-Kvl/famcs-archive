@@ -1,0 +1,1 @@
+{"RandomForest_val_AP":0.6751437535626794,"_wandb":{"runtime":0},"_runtime":0,"HistGradientBoosting_val_AP":0.6272755571979876,"DecisionTree depth=5_val_AP":0.6237659795560401,"_timestamp":1.790951502612594e+09,"_step":0,"LogisticRegression_val_AP":0.6775146556554497}
