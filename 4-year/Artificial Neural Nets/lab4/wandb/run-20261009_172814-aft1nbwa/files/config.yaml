@@ -1,0 +1,55 @@
+_wandb:
+    value:
+        cli_version: 0.28.2
+        e:
+            atsupw38vbhsos4du5y6f3cpgbsucpj1:
+                codePath: /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab4/lab_regularization_wandb_completed.ipynb
+                codePathLocal: lab_regularization_wandb_completed.ipynb
+                cpu_count: 2
+                cpu_count_logical: 4
+                disk:
+                    /:
+                        total: "121123069952"
+                        used: "103924338688"
+                email: korovatomilk@gmail.com
+                executable: /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/.venv/bin/python
+                git:
+                    commit: cd47b6765cced882346d516104394675653c1ed0
+                    remote: git@github.com:Klimentij-Kvl/famcs-archive.git
+                host: MacBook-Air-3.local
+                memory:
+                    total: "8589934592"
+                os: macOS-12.7.6-x86_64-i386-64bit
+                program: /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab4/lab_regularization_wandb_completed.ipynb
+                python: CPython 3.11.0
+                root: /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab4
+                startedAt: "2026-10-09T14:28:14.167610Z"
+                writerId: atsupw38vbhsos4du5y6f3cpgbsucpj1
+        m: []
+        python_version: 3.11.0
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+                - 78
+            "4": 3.11.0
+            "5": 0.28.2
+            "8":
+                - 1
+            "12": 0.28.2
+            "13": darwin-x86_64
+alpha:
+    value: 316.22776601683796
+cv_folds:
+    value: 5
+model:
+    value: Ridge
+poly_degree:
+    value: 3

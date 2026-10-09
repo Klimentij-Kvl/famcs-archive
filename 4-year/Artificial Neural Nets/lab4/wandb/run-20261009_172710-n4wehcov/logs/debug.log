@@ -1,0 +1,28 @@
+2026-10-09 17:27:10,260 INFO    MainThread:1604 [wandb_setup.py:_flush():81] Current SDK version is 0.28.2
+2026-10-09 17:27:10,262 INFO    MainThread:1604 [wandb_setup.py:_flush():81] Configure stats pid to 1604
+2026-10-09 17:27:10,262 INFO    MainThread:1604 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-10-09 17:27:10,265 INFO    MainThread:1604 [wandb_init.py:setup_run_log_directory():739] Logging user logs to /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab4/wandb/run-20261009_172710-n4wehcov/logs/debug.log
+2026-10-09 17:27:10,269 INFO    MainThread:1604 [wandb_init.py:setup_run_log_directory():740] Logging internal logs to /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab4/wandb/run-20261009_172710-n4wehcov/logs/debug-internal.log
+2026-10-09 17:27:10,269 INFO    MainThread:1604 [wandb_init.py:monkeypatch_ipython():658] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x12419ef10>
+2026-10-09 17:27:10,272 INFO    MainThread:1604 [wandb_init.py:init():783] calling init triggers
+2026-10-09 17:27:10,272 INFO    MainThread:1604 [wandb_init.py:init():788] wandb.init called with sweep_config: {}
+config: {'model': 'LinearRegression', 'degree': 1, 'n_splits': 8, '_wandb': {}}
+2026-10-09 17:27:10,272 INFO    MainThread:1604 [wandb_init.py:init():831] starting backend
+2026-10-09 17:27:10,272 INFO    MainThread:1604 [wandb_init.py:init():846] sending inform_init request
+2026-10-09 17:27:11,485 INFO    MainThread:1604 [wandb_init.py:init():851] backend started and connected
+2026-10-09 17:27:11,697 INFO    MainThread:1604 [wandb_run.py:_label_probe_notebook():1290] probe notebook
+2026-10-09 17:27:11,700 INFO    MainThread:1604 [wandb_init.py:init():921] updated telemetry
+2026-10-09 17:27:11,912 INFO    MainThread:1604 [wandb_init.py:init():944] communicating run to backend with 90.0 second timeout
+2026-10-09 17:27:13,015 INFO    MainThread:1604 [wandb_init.py:init():981] starting run threads in backend
+2026-10-09 17:27:13,633 INFO    MainThread:1604 [wandb_run.py:_console_start():2626] atexit reg
+2026-10-09 17:27:13,633 INFO    MainThread:1604 [wandb_run.py:_redirect():2476] redirect: wrap_raw
+2026-10-09 17:27:13,633 INFO    MainThread:1604 [wandb_run.py:_redirect():2545] Wrapping output streams.
+2026-10-09 17:27:13,634 INFO    MainThread:1604 [wandb_run.py:_redirect():2568] Redirects installed.
+2026-10-09 17:27:13,642 INFO    MainThread:1604 [wandb_init.py:init():1019] run started, returning control to user process
+2026-10-09 17:27:13,645 INFO    MainThread:1604 [wandb_run.py:_finish():2397] finishing run korovatomilk-no-company/apml-course/n4wehcov
+2026-10-09 17:27:13,651 INFO    MainThread:1604 [jupyter.py:save_ipynb():368] not saving jupyter notebook
+2026-10-09 17:27:13,651 INFO    MainThread:1604 [wandb_init.py:_jupyter_teardown():637] cleaning up jupyter logic
+2026-10-09 17:27:13,655 INFO    MainThread:1604 [wandb_run.py:_atexit_cleanup():2593] got exitcode: 0
+2026-10-09 17:27:13,656 INFO    MainThread:1604 [wandb_run.py:_restore():2575] restore
+2026-10-09 17:27:13,656 INFO    MainThread:1604 [wandb_run.py:_restore():2581] restore done
+2026-10-09 17:27:16,777 INFO    MainThread:1604 [wandb_run.py:_footer_sync_info():4025] logging synced files

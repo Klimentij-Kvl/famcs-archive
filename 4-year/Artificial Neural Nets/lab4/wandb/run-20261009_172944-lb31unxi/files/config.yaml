@@ -1,0 +1,63 @@
+_wandb:
+    value:
+        cli_version: 0.28.2
+        e:
+            wpw1nxdjzrakqbaaueyu0bzbicns34ip:
+                codePath: /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab4/lab_regularization_wandb_completed.ipynb
+                codePathLocal: lab_regularization_wandb_completed.ipynb
+                cpu_count: 2
+                cpu_count_logical: 4
+                disk:
+                    /:
+                        total: "121123069952"
+                        used: "103915565056"
+                email: korovatomilk@gmail.com
+                executable: /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/.venv/bin/python
+                git:
+                    commit: cd47b6765cced882346d516104394675653c1ed0
+                    remote: git@github.com:Klimentij-Kvl/famcs-archive.git
+                host: MacBook-Air-3.local
+                memory:
+                    total: "8589934592"
+                os: macOS-12.7.6-x86_64-i386-64bit
+                program: /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab4/lab_regularization_wandb_completed.ipynb
+                python: CPython 3.11.0
+                root: /Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab4
+                startedAt: "2026-10-09T14:29:44.903428Z"
+                writerId: wpw1nxdjzrakqbaaueyu0bzbicns34ip
+        m: []
+        python_version: 3.11.0
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+                - 78
+            "4": 3.11.0
+            "5": 0.28.2
+            "8":
+                - 1
+            "12": 0.28.2
+            "13": darwin-x86_64
+cv_folds:
+    value: 5
+degree:
+    value: 2
+model:
+    value: Lasso
+param_grid:
+    value:
+        regressor__model__alpha:
+            - 0.001
+            - 0.01
+            - 0.1
+            - 1
+            - 10
+task:
+    value: "6.3"
