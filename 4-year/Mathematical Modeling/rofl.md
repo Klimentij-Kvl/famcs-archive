@@ -18,8 +18,13 @@ v_2|_{y=0} = xz^2 (z-6) (x-2)^2, v_2|_{y=4} = \sin(\frac{5 \pi x}{4}) \cos(\frac
 $$
 
 $$
-\Delta v_1 = (x^2 + y^2)z + 2z \cos x \sin y \\
-v_1|_{x=0} = 0, v_1_x|_{x=2}= 0 \\
-v_1_z|_{z=0} = 0, v_1|_{z=6} = 0 \\
-v_1|_{y=0} = 0, v_1|_{y=4} = 0
+\Delta v_1 = y^3 \cos(2 \pi x / a) \cos(4 \pi z / c) + y^2(z \cos(2 \pi x / a) + \cos(4 \pi z / c)) + 4
+$$
+
+$$
+
+\Delta v_1 = y^3 \cos(2 \pi x / a) \cos(4 \pi z / c) + y^2(z \cos(2 \pi x / a + \cos(4 \pi z / c))) + 4 \\
+v_1_x|_{x=0} = 0, v_1_x|_{x=a}= 0 \\
+v_1_z|_{z=0} = 0, v_1_z|_{z=c} = 0 \\
+v_1|_{y=0} = 0, v_1|_{y=b} = 0
 $$

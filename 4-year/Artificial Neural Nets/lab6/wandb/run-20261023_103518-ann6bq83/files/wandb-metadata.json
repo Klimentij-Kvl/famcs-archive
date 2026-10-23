@@ -1,0 +1,28 @@
+{
+  "os": "macOS-12.7.6-x86_64-i386-64bit",
+  "python": "CPython 3.11.0",
+  "startedAt": "2026-10-23T07:35:18.134906Z",
+  "program": "/Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab6/Kovalevsij_Lab7.ipynb",
+  "codePath": "/Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab6/Kovalevsij_Lab7.ipynb",
+  "codePathLocal": "Kovalevsij_Lab7.ipynb",
+  "git": {
+    "remote": "git@github.com:Klimentij-Kvl/famcs-archive.git",
+    "commit": "db3c1ea3bed04ec0041a24f977aa035c0191b846"
+  },
+  "email": "korovatomilk@gmail.com",
+  "root": "/Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/lab6",
+  "host": "MacBook-Air-3.local",
+  "executable": "/Users/nagiev/famcs-archive/4-year/Artificial Neural Nets/.venv/bin/python",
+  "cpu_count": 2,
+  "cpu_count_logical": 4,
+  "disk": {
+    "/": {
+      "total": "121123069952",
+      "used": "101597450240"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "writerId": "bifzhx0z69wh0io7y2373zvvqel91b8j"
+}
