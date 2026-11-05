@@ -1,0 +1,117 @@
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 389
+6 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 14
+6 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 468
+1 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 328
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 308
+4 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 288
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 268
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 250
+1 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 232
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 218
+2 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 204
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 190
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 176
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 163
+1 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 150
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 137
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 124
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 112
+1 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 100
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 89
+1 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 82
+1 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 75
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 68
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 61
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 54
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 49
+1 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 44
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 39
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 34
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 29
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 24
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 19
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 16
+1 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 13
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 10
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 7
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 4
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 1
+0 simplex iterations
+0 barrier iterations
+HiGHS 1.15.1: HiGHS 1.15.1: optimal solution; objective 0
+1 simplex iterations
+0 barrier iterations

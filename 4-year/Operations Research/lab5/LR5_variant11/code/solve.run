@@ -1,0 +1,17 @@
+reset;
+model model.mod;
+data variant11.dat;
+option solver highs;
+drop Fastest;
+objective TotalCost;
+solve;
+printf "\nGLOBAL COST OPTIMUM\n";
+display solve_result, y[sink], TotalCost, x, y;
+objective Duration;
+solve;
+let Tmin := y[sink];
+restore Fastest;
+objective TotalCost;
+solve;
+printf "\nMINIMUM COST AT FASTEST DURATION\n";
+display solve_result, Tmin, y[sink], TotalCost, x, y;
