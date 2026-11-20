@@ -1,0 +1,33 @@
+
+set I := A1 A2 A3 A4;
+set J := B1 B2 B3 B4;
+
+set EXISTING := A1 A2;
+set NEW := A3 A4;
+
+param cap :=
+A1 400
+A2 600
+A3 200
+A4 200
+;
+
+param demand :=
+B1 350
+B2 400
+B3 300
+B4 150
+;
+
+param c:
+      B1  B2  B3  B4 :=
+A1     2   9   3   4
+A2     8   3   5   7
+A3     7   6   1   2
+A4     4   5   2   5
+;
+
+param annual_cost :=
+A3 1200
+A4 1500
+;
